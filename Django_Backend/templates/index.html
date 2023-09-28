@@ -1,0 +1,338 @@
+<!-- index.html -->
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock title %}
+{% block content %}
+{% load static %}
+
+<!-- Bootstrap core CSS -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/animate-custom.css' %}" rel="stylesheet"> 
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/modernizr.custom.js' %}"></script>
+
+<!-- ==== HEADERWRAP ==== -->
+<div id="home-section">
+<div id="headerwrap" name="home">
+  <header class="clearfix tb"> 
+ <div class="tb-cell text-center">
+ <i class="fa fa-heart-o icon"></i>
+    <h1>Advancing Fetal Brain Anomaly Detection:
+      </h1>
+    <p>Precision, Early Diagnosis, and Targeted Care</p>
+    <a href="#portfolio" class="smoothScroll btn btn-lg">Today's Special</a> 
+	</div>
+	</header>
+</div>
+
+</div>
+<div class="div-pattern2"></div>
+<!-- /headerwrap --> 
+
+
+
+<!-- ==== SERVICES ==== -->
+<div id="services" name="services">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">WHAT WE OFFER</h2>
+      <hr>
+      <div class="col-lg-8 col-lg-offset-2">
+        <p class="large">We offer a groundbreaking solution for early detection of fetal brain anomalies. Our system excels in accurately distinguishing normal from abnormal conditions, even identifying specific anomalies with precision. Powered by advanced image processing techniques, we provide expectant parents and healthcare professionals with the tools for early intervention and personalized care, ultimately leading to improved healthcare outcomes and peace of mind.</p>
+      </div>
+      <div class="col-lg-4 callout"> <i class="fa fa-cubes fa-3x"></i>
+        <h3>COFFEE</h3>
+        <p>Erat imperdiet dissentias ea usu, alia aliquid corrumpit ea qui. Eu vim oratio conclusionemque, vel at errem nominavi delicatissimi.</p>
+      </div>
+      <div class="col-lg-4 callout"> <i class="fa fa-flask fa-3x"></i>
+        <h3>TEA</h3>
+        <p>Erat imperdiet dissentias ea usu, alia aliquid corrumpit ea qui. Eu vim oratio conclusionemque, vel at errem nominavi delicatissimi.</p>
+      </div>
+      <div class="col-lg-4 callout"> <i class="fa fa-life-ring fa-3x"></i>
+        <h3>CAKES</h3>
+        <p>Erat imperdiet dissentias ea usu, alia aliquid corrumpit ea qui. Eu vim oratio conclusionemque, vel at errem nominavi delicatissimi.</p>
+      </div>
+    </div>
+    <!-- row --> 
+  </div>
+</div>
+<!-- container --> 
+<section class="hero-section section">  
+        <div class="container">
+            <div class="highlight tb">
+                <div class="tb-cell">
+                    <p>Upload Image of Fetal Brain to identify the abnormalities in the fetal's brain.</p>
+                </div>
+                <div class="links tb-cell">
+                    <div class="reservation-link">
+                        <a href="{% url 'uploads' %}" class="btn reservation-btn">UPLOAD</a> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+		
+    </section>
+	<div class="div-pattern"></div>
+<!-- ==== ABOUT ==== -->
+<div id="about" name="about">
+  <div class="container">
+    <div class="row white">
+      <h2 class="centered">Our Work</h2>
+      <hr>
+      <div class="col-md-6"> <img class="img-responsive" src="{% static "logo_brain.jpg" %}" align=""> </div>
+      <div class="col-md-6">
+        <h3>Who we are</h3>
+        <p>We are a group of passionate students dedicated to fetal brain anomaly detection. Driven by our commitment to advancing healthcare and leveraging our skills and knowledge, we aim to contribute meaningfully to the field of fetal health.</p>
+        <h3>Why choose us?</h3>
+        <p>Our approach to fetal brain anomaly detection is grounded in robust foundations. We provide comprehensive datasets that expedite research, backed by our deep expertise in fetal brain anatomy, ensuring precision. Diverse data sources enhance our adaptability, while gestational age independence guarantees reliable results. Our system is also adaptive to various fetal positions, maintaining consistent accuracy. In essence, we're committed to early and precise anomaly detection, making us the dependable choice.
+          </p>
+      </div>
+    </div>
+    <!-- row --> 
+  </div>
+</div>
+<!-- container --> 
+<!-- ==== PORTFOLIO ==== -->
+<div id="portfolio" name="portfolio">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">What Special</h2>
+      <hr>
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+      </div>
+    </div>
+    <!-- /row -->
+    <div class="container">
+      <div class="row"> 
+        
+        <!-- PORTFOLIO IMAGE 1 -->
+        <div class="col-md-4 ">
+          <div class="grid overlay">
+            <figure> <img class="img-responsive" src="{% static "img/portfolio/folio01.jpg" %}" alt="">
+              <figcaption>
+                <h5>Coco Cake</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-overlay --> 
+        </div> 
+        
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Rose Cake</h4>
+              </div>
+              <div class="modal-body">
+                <p><img class="img-responsive" src="{% static "img/portfolio/folio01-preview.jpg" %}" alt=""></p>
+                <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. </p> 
+              </div> 
+            </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal --> 
+        
+        <!-- PORTFOLIO IMAGE 2 -->
+        <div class="col-md-4">
+          <div class="grid overlay">
+            <figure> <img class="img-responsive" src="{% static "img/portfolio/folio02.jpg" %}" alt="">
+              <figcaption>
+                <h5>Green Tea</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-overlay --> 
+        </div>
+        
+        <!-- PORTFOLIO IMAGE 3 -->
+        <div class="col-md-4">
+          <div class="grid overlay">
+            <figure> <img class="img-responsive" src="{% static "img/portfolio/folio03.jpg" %}" alt="">
+              <figcaption>
+                <h5>Cappuccino</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-overlay --> 
+        </div>
+      </div>
+      <!-- /row --> 
+      
+      <!-- PORTFOLIO IMAGE 4 -->
+      <div class="row">
+        <div class="col-md-4 ">
+          <div class="grid overlay">
+            <figure> <img class="img-responsive" src="{% static "img/portfolio/folio04.jpg" %}" alt="">
+              <figcaption>
+                <h5>Green Tea</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-overlay --> 
+        </div>
+        
+        <!-- PORTFOLIO IMAGE 5 -->
+        <div class="col-md-4">
+          <div class="grid overlay">
+            <figure> <img class="img-responsive" src="{% static "img/portfolio/folio05.jpg" %}" alt="">
+              <figcaption>
+                <h5>Cookies</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-overlay --> 
+        </div>
+        
+        <!-- PORTFOLIO IMAGE 6 -->
+        <div class="col-md-4">
+          <div class="grid overlay">
+            <figure> <img class="img-responsive" src="{% static "img/portfolio/folio06.jpg" %}" alt="">
+              <figcaption>
+                <h5>Cake</h5>
+                <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a> </figcaption>
+              <!-- /figcaption --> 
+            </figure>
+            <!-- /figure --> 
+          </div>
+          <!-- /grid-overlay --> 
+        </div>
+        <!-- /col --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /row --> 
+  </div>
+</div>
+<!-- /container --> 
+
+<!-- ==== TEAM MEMBERS ==== -->
+<div id="team" name="team">
+  <div class="container">
+    <div class="row centered">
+      <h2 class="centered">Meet Our Team</h2>
+      <hr>
+	   <div class="col-lg-8 col-lg-offset-2 centered">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+		<br/>
+      </div>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="{% static "img/team/team01.jpg" %}" height="120px" width="120px" alt="">
+        <h4><strong>Vedansh Udhawani</strong></h4>
+        <p>Django, Python, MySQL</p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="{% static "img/team/team02.jpg" %}" height="120px" width="120px" alt="">
+        <h4><b>Chirag Dodeja</b></h4>
+        <p>Consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="{% static "img/team/team03.jpg" %}" height="120px" width="120px" alt="">
+        <h4><b>Romesh Lulla</b></h4>
+        <p>Consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+      <div class="col-lg-3 centered"> <img class="img img-circle" src="{% static "img/team/team04.jpg" %}" height="120px" width="120px" alt="">
+        <h4><b>Abhishek Chhabria</b></h4>
+        <p>Consectetuer eu nam. Saepe legendos vulputate eu quo, id mea comprehensam signifer.</p>
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+     
+    </div>
+  </div>
+  <!-- row --> 
+</div>
+<!-- container --> 
+
+<!-- ==== CONTACT ==== -->
+<div id="contact" name="contact">
+  <div class="container">
+    <div class="row">
+      <h2 class="centered">Get In Touch</h2>
+      <hr>
+    
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+	  <strong>Please give us your feedback!</strong>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        <form id="contact" method="post" class="form" role="form">
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
+            </div>
+            <div class="col-md-12 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+            </div>
+			 <div class="col-md-12 form-group">
+              <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>             
+              <button class="btn btn-lg pull-left" type="submit">Send Message</button>
+            </div>
+          </div>
+           
+        </form>
+        <!-- form --> 
+      </div>
+	  <div class="col-md-5">
+	         
+       
+	  <i class="fa fa-map-marker fa-2x"></i>
+        <strong>Coffee Shop</strong>
+		<p>321 Awesome Street<br>
+          New York, NY 12345</p>
+      
+      <br/> 
+	  <i class="fa fa-envelope-o fa-2x"></i>
+        <p>info@companyname.com</p>
+       
+       <br/> 
+	  <i class="fa fa-phone fa-2x"></i>
+        <p> +1 235 123 1234</p>
+       
+	  </div>
+    </div>
+    <!-- row --> 
+    
+  </div>
+</div>
+<!-- container -->
+
+<div id="footerwrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8"> <span class="copyright">Copyright &copy; 2015. Design by <a href="http://www.webthemez.com">Webthemez</a></span> </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+
+<script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/jquery.easing.1.3.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/smoothscroll.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/custom-scripts.js" %}"></script>
+
+{% endblock content %}

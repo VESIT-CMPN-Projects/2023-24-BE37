@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top fixed-top mb-4">
+  <div class="container-fluid">
+    <div class="navbar-brand">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="{% url 'home_url' %}" class="navbar-brand">Welcome</a></li>
+        <li><a href="#services" class="navbar-brand">Fetal Brain</a></li>
+        <li><a href="#about" class="navbar-brand">Anomalies</a></li>
+        <li><a href="#portfolio" class="navbar-brand">Upload</a></li>
+        <li><a href="#team" class="navbar-brand">Our Team</a></li>
+        <li><a href="#contact" class="navbar-brand">Get In Touch</a></li>          
+    </ul>
+  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+        </li>
+      </ul>
+     
+      <div class="d-flex">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        {% if user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link active" href="#">{{ request.user|capfirst }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'users:logout' %}">logout</a>
+          </li>
+        {% else %}
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'users:login' %}">Login</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'users:register' %}">Register</a>
+          </li>
+        {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

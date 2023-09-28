@@ -1,0 +1,14 @@
+anold chiari malformation
+arachnoid cyst
+cerebellah hypoplasia
+cisterna magna
+colphocephaly
+encephalocele
+holoprosencephaly
+hydracenphaly
+intracranial hemorrdge
+intracranial tumor
+mild ventriculomegaly
+moderate ventriculomegaly
+polencephaly
+
