@@ -13,8 +13,8 @@ pip install django-debug-toolbar<br>
 pip install celery<br>
 pip install yolov5<br>
 
-**Change Directory**<br>
-cd replace_directory
+**Change Directory(optional)**<br>
+cd replace_directory(Folder where manage.py is present)
 
 
 **migrate**<br>
