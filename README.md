@@ -1,6 +1,46 @@
 # Fetal_Brain_Anomalies
 
-Classes Identified in the project are :
+**To Run the code Locally:** <br>
+
+clone the repo locally
+create virtual env 
+
+**install dependencies**<br>
+pip install django<br>
+pip install django-crispy-forms<br>
+pip install django-cleanup<br>
+pip install django-debug-toolbar<br>
+pip install celery<br>
+pip install yolov5<br>
+
+**Change Directory**<br>
+cd replace_directory
+
+
+**migrate**<br>
+python manage.py migrate
+
+**create super user**<br>
+python manage.py createsuperuser # (it may show an error page if no 'default.png' in media folder. See note.)
+
+Note<br>
+An image with the name default.png in media folder is required for user-profile. Create media folder and add any image file with this name 'default.png'.
+
+**run**<br>
+python manage.py runserver
+
+**login**<br>
+Login at the web address 127.0.0.1:8000 using the superuser credentials.
+
+**Create ImageSet**<br>
+create an ImageSet first and then upload images into the ImageSet from ImageSet detail page.
+
+On images list page click on detect object.
+
+select a YoloV5 model
+the YoloV5 dependencies and pre-trained model will start downloading.
+
+# Classes Identified in the project are :
 
 | Class                      | Images | Instances | Box(P) | R     | mAP50 | mAP50-95 | Mask(P) | R     | mAP50 | mAP50-95 |
 | -------------------------- | ------ | --------- | ------ | ----- | ----- | -------- | ------- | ----- | ----- | -------- |
