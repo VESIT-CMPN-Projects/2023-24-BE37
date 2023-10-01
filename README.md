@@ -4,6 +4,7 @@
 
 clone the repo locally
 create virtual env 
+command : "git clone https://github.com/Vedansh-777/Fetal_Brain_Anomalies.git"
 
 **install dependencies**<br>
 pip install django<br>
