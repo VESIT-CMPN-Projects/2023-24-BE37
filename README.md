@@ -1,64 +1,96 @@
-# Fetal_Brain_Anomalies
+# Fetal Brain Anomalies Detection
 
-**To Run the code Locally:** <br>
+## Introduction
 
-clone the repo locally
-create virtual env 
-command : "git clone https://github.com/Vedansh-777/Fetal_Brain_Anomalies.git"
+This project aims to detect fetal brain anomalies using the YOLOv5 model and provides a web interface for easy image analysis. It is designed to assist medical professionals and researchers in identifying anomalies in fetal brain images, enabling timely diagnosis and intervention.
 
-**install dependencies**<br>
-pip install django<br>
-pip install django-crispy-forms<br>
-pip install django-cleanup<br>
-pip install django-debug-toolbar<br>
-pip install celery<br>
-pip install yolov5<br>
+### To Run the code Locally:
 
-**Change Directory(optional)**<br>
-cd replace_directory(Folder where manage.py is present)
+Clone the repo locally and create a virtual environment:
+
+```shell
+git clone https://github.com/Vedansh-777/Fetal_Brain_Anomalies.git
+```
 
 
-**migrate**<br>
+### Install Dependencies
+
+Install all the dependencies listed in _requirements.txt_ file.
+```python
+pip install -r requirements.txt
+```
+
+
+### Change Directory (optional)
+
+Navigate to the directory where _manage.py_ is present:
+```python
+# Replace 'replace_directory' with the folder where 'manage.py' is present
+cd replace_directory
+```
+
+
+### Migrate
+
+Apply database migrations:
+```python
 python manage.py migrate
+```
 
-**create super user**<br>
-python manage.py createsuperuser # (it may show an error page if no 'default.png' in media folder. See note.)
 
-Note<br>
-An image with the name default.png in media folder is required for user-profile. Create media folder and add any image file with this name 'default.png'.
+### Create Super User
 
-**run**<br>
+Create a superuser to access the admin panel:
+```python
+python manage.py createsuperuser
+```
+
+> Note: You need to have an image named _**default.png**_ in the 'media' folder for user profiles. Create a 'media' folder and add an image file named 'default.png' if it does not exist.
+
+
+### Run
+
+Run the application locally:
+```python
 python manage.py runserver
-
-**login**<br>
-Login at the web address 127.0.0.1:8000 using the superuser credentials.
-
-**Create ImageSet**<br>
-create an ImageSet first and then upload images into the ImageSet from ImageSet detail page.
-
-On images list page click on detect object.
-
-select a YoloV5 model
-the YoloV5 dependencies and pre-trained model will start downloading.
-
-# Classes Identified in the project are :
-
-| Class                      | Images | Instances | Box(P) | R     | mAP50 | mAP50-95 | Mask(P) | R     | mAP50 | mAP50-95 |
-| -------------------------- | ------ | --------- | ------ | ----- | ----- | -------- | ------- | ----- | ----- | -------- |
-| all                        | 357    | 381       | 0.901  | 0.942 | 0.962 | 0.637    | 0.896   | 0.935 | 0.957 | 0.55     |
-| anold chiari malformation  | 357    | 10        | 0.935  | 1     | 0.995 | 0.679    | 0.935   | 1     | 0.995 | 0.505    |
-| arachnoid cyst             | 357    | 22        | 1      | 0.968 | 0.995 | 0.662    | 1       | 0.968 | 0.995 | 0.62     |
-| cerebellah hypoplasia      | 357    | 32        | 0.844  | 0.845 | 0.897 | 0.633    | 0.875   | 0.876 | 0.943 | 0.583    |
-| cisterna magna             | 357    | 10        | 0.789  | 1     | 0.977 | 0.599    | 0.71    | 0.9   | 0.887 | 0.479    |
-| colphocephaly              | 357    | 29        | 0.802  | 0.724 | 0.842 | 0.438    | 0.802   | 0.724 | 0.842 | 0.429    |
-| encephalocele              | 357    | 37        | 1      | 0.915 | 0.953 | 0.652    | 1       | 0.915 | 0.953 | 0.631    |
-| holoprosencephaly          | 357    | 4         | 0.862  | 1     | 0.995 | 0.846    | 0.862   | 1     | 0.995 | 0.647    |
-| hydracenphaly              | 357    | 8         | 0.91   | 1     | 0.995 | 0.765    | 0.91    | 1     | 0.995 | 0.728    |
-| intracranial hemorrdge      | 357    | 18        | 1      | 0.94  | 0.972 | 0.505    | 1       | 0.94  | 0.972 | 0.545    |
-| intracranial tumor          | 357    | 1         | 0.781  | 1     | 0.995 | 0.697    | 0.781   | 1     | 0.995 | 0.298    |
-| mild ventriculomegaly       | 357    | 72        | 0.956  | 0.907 | 0.935 | 0.56     | 0.956   | 0.907 | 0.942 | 0.502    |
-| moderate ventriculomegaly   | 357    | 71        | 0.79   | 0.956 | 0.951 | 0.646    | 0.79    | 0.956 | 0.951 | 0.599    |
-| polencephaly                | 357    | 32        | 1      | 0.968 | 0.988 | 0.588    | 1       | 0.968 | 0.988 | 0.549    |
+```
+You can access the web interface by visiting http://127.0.0.1:8000 in your web browser and logging in with the superuser credentials.
 
 
+### Usage
 
+1. Create an ImageSet: Before uploading images for analysis, create an ImageSet from the ImageSet detail page.
+
+2. Upload Images: After creating an ImageSet, you can upload images into the ImageSet from the ImageSet detail page.
+
+3. Detect Objects: On the images list page, click on the "Detect Object" button.
+
+4. Select YOLOv5 Model: Choose a YOLOv5 model for object detection. Dependencies and pre-trained models will be downloaded automatically.
+
+
+### Identified Classes
+
+The following table shows the classes identified in the project, along with relevant statistics:
+
+| Class                      | Images | Instances | Box(P) | Recall | mAP50 | mAP50-95 | Mask(P) | Recall | mAP50 | mAP50-95 |
+| -------------------------- | ------ | --------- | ------ | ------ | ----- | -------- | ------- | ------ | ----- | -------- |
+| All                        | 357    | 381       | 0.901  | 0.942  | 0.962 | 0.637    | 0.896   | 0.935  | 0.957 | 0.55     |
+| Arnold Chiari Malformation | 357    | 10        | 0.935  | 1      | 0.995 | 0.679    | 0.935   | 1      | 0.995 | 0.505    |
+| Arachnoid Cyst             | 357    | 22        | 1      | 0.968  | 0.995 | 0.662    | 1       | 0.968  | 0.995 | 0.62     |
+| Cerebellar Hypoplasia      | 357    | 32        | 0.844  | 0.845  | 0.897 | 0.633    | 0.875   | 0.876  | 0.943 | 0.583    |
+| Cisterna Magna             | 357    | 10        | 0.789  | 1      | 0.977 | 0.599    | 0.71    | 0.9    | 0.887 | 0.479    |
+| Colphocephaly              | 357    | 29        | 0.802  | 0.724  | 0.842 | 0.438    | 0.802   | 0.724  | 0.842 | 0.429    |
+| Encephalocele              | 357    | 37        | 1      | 0.915  | 0.953 | 0.652    | 1       | 0.915  | 0.953 | 0.631    |
+| Holoprosencephaly          | 357    | 4         | 0.862  | 1      | 0.995 | 0.846    | 0.862   | 1      | 0.995 | 0.647    |
+| Hydracenphaly              | 357    | 8         | 0.91   | 1      | 0.995 | 0.765    | 0.91    | 1      | 0.995 | 0.728    |
+| Intracranial Hemorrhage    | 357    | 18        | 1      | 0.94   | 0.972 | 0.505    | 1       | 0.94   | 0.972 | 0.545    |
+| Intracranial Tumor         | 357    | 1         | 0.781  | 1      | 0.995 | 0.697    | 0.781   | 1      | 0.995 | 0.298    |
+| Mild Ventriculomegaly      | 357    | 72        | 0.956  | 0.907  | 0.935 | 0.56     | 0.956   | 0.907  | 0.942 | 0.502    |
+| Moderate Ventriculomegaly  | 357    | 71        | 0.79   | 0.956  | 0.951 | 0.646    | 0.79    | 0.956  | 0.951 | 0.599    |
+| Polencephaly               | 357    | 32        | 1      | 0.968  | 0.988 | 0.588    | 1       | 0.968  | 0.988 | 0.549    |
+
+<br>
+
+Feel free to reach out if you have any questions or need further assistance. Enjoy using the Fetal Brain Anomalies Detection application!
+
+---
