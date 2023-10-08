@@ -4,53 +4,58 @@
 
 This project aims to detect fetal brain anomalies using the YOLOv5 model and provides a web interface for easy image analysis. It is designed to assist medical professionals and researchers in identifying anomalies in fetal brain images, enabling timely diagnosis and intervention.
 
-### To Run the code Locally:
+## To Run the code Locally:
 
-Clone the repo locally and create a virtual environment:
+1. Clone the Repository to your local machine:
 
 ```shell
 git clone https://github.com/Vedansh-777/Fetal_Brain_Anomalies.git
 ```
+2. Create a virtual environment and activate it:
 
+```python
+python -m venv myenv 
+```
+Assuming you're on  macOS or Linux (activate):
+```python
+source myenv/bin/activate 
+```
 
-### Install Dependencies
+3. Install Dependencies:
 
 Install all the dependencies listed in _requirements.txt_ file.
 ```python
 pip install -r requirements.txt
 ```
 
-
-### Change Directory (optional)
+4. Change Directory (optional):
 
 Navigate to the directory where _manage.py_ is present:
+> Replace 'replace_directory' with the folder where `manage.py` is present (maybe _Django_Backend_)
 ```python
-# Replace 'replace_directory' with the folder where 'manage.py' is present
 cd replace_directory
 ```
 
+5. Apply Database Migrations:
 
-### Migrate
-
-Apply database migrations:
+Apply database migrations to set up the database:
 ```python
 python manage.py migrate
 ```
 
+6. Create Super User:
 
-### Create Super User
-
-Create a superuser to access the admin panel:
+Create a superuser account to access the admin panel and manage the application:
 ```python
 python manage.py createsuperuser
 ```
+Follow the prompts to set up the superuser credentials.
+> Note: You need to have an image named _**default.png**_ in the '_media_' folder for user profiles. If not present, create a '_media_' folder and add an image file named '_default.png_' if it does not exist.
 
-> Note: You need to have an image named _**default.png**_ in the 'media' folder for user profiles. Create a 'media' folder and add an image file named 'default.png' if it does not exist.
 
+7. Run the Application Locally:
 
-### Run
-
-Run the application locally:
+Start the local development server:
 ```python
 python manage.py runserver
 ```
@@ -68,7 +73,7 @@ You can access the web interface by visiting http://127.0.0.1:8000 in your web b
 4. Select YOLOv5 Model: Choose a YOLOv5 model for object detection. Dependencies and pre-trained models will be downloaded automatically.
 
 
-### Identified Classes
+## Identified Classes
 
 The following table shows the classes identified in the project, along with relevant statistics:
 
@@ -88,6 +93,15 @@ The following table shows the classes identified in the project, along with rele
 | Mild Ventriculomegaly      | 357    | 72        | 0.956  | 0.907  | 0.935 | 0.56     | 0.956   | 0.907  | 0.942 | 0.502    |
 | Moderate Ventriculomegaly  | 357    | 71        | 0.79   | 0.956  | 0.951 | 0.646    | 0.79    | 0.956  | 0.951 | 0.599    |
 | Polencephaly               | 357    | 32        | 1      | 0.968  | 0.988 | 0.588    | 1       | 0.968  | 0.988 | 0.549    |
+
+<br>
+
+## Contributing
+
+We welcome contributions from the community. Whether you want to report a bug, suggest an enhancement, or contribute code, please follow the guidelines [Contributing Guidelines](CONTRIBUTING.md).
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 <br>
 
