@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" modified="2024-04-04T11:23:45.394Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15" etag="fkMVtSuQszSbZBR-05k-" version="24.2.2" type="device">
+  <diagram id="IN6Hcz5uRNF_Hfuc14o8" name="Page-1">
+    <mxGraphModel dx="1266" dy="687" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=13;" parent="1" source="CKL8vKGvX0eeEYmBVPlq-2" target="CKL8vKGvX0eeEYmBVPlq-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-2" value="Image Acquisition" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="360" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=13;" parent="1" source="CKL8vKGvX0eeEYmBVPlq-3" target="CKL8vKGvX0eeEYmBVPlq-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-3" value="Preprocessing" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="360" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Times New Roman;fontSize=13;" parent="1" source="CKL8vKGvX0eeEYmBVPlq-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-4" value="Training" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="360" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1hc5lkNXpVUWVW5WvW82-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=13;" parent="1" source="CKL8vKGvX0eeEYmBVPlq-5" target="CKL8vKGvX0eeEYmBVPlq-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-5" value="Classification" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="360" y="524.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-15" value="Fetal Brain Anomaly" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="356" y="641" width="127" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=13;" parent="1" source="CKL8vKGvX0eeEYmBVPlq-16" target="CKL8vKGvX0eeEYmBVPlq-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-16" value="Deep Learning Algorithm" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="200" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Times New Roman;fontSize=13;" parent="1" source="CKL8vKGvX0eeEYmBVPlq-17" target="CKL8vKGvX0eeEYmBVPlq-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-17" value="ROI" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="520" y="310" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=13;" parent="1" source="CKL8vKGvX0eeEYmBVPlq-18" target="CKL8vKGvX0eeEYmBVPlq-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-18" value="Feature Extraction" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="200" y="310" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=13;" parent="1" source="CKL8vKGvX0eeEYmBVPlq-20" target="CKL8vKGvX0eeEYmBVPlq-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-20" value="FCN Algorithm" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="520" y="430" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=13;" parent="1" source="CKL8vKGvX0eeEYmBVPlq-27" target="CKL8vKGvX0eeEYmBVPlq-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-27" value="Fetal Brain Ultrasound Images" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="347" y="74" width="146" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontSize=13;" parent="1" source="CKL8vKGvX0eeEYmBVPlq-44" target="CKL8vKGvX0eeEYmBVPlq-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CKL8vKGvX0eeEYmBVPlq-44" value="Classification Algorithm" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="200" y="460" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
