@@ -4,6 +4,10 @@
 
 This project aims to detect fetal brain anomalies using the YOLOv5 model and provides a web interface for easy image analysis. It is designed to assist medical professionals and researchers in identifying anomalies in fetal brain images, enabling timely diagnosis and intervention.
 
+## Demo of the WebApp
+
+<https://user-images.githubusercontent.com/104087274/183131139-6a2c9b6d-2f0e-4f25-83b3-df2281eeb489.mov>
+
 ## To Run the code Locally:
 
 1. Clone the Repository to your local machine:
